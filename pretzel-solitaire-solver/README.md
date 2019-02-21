@@ -46,3 +46,7 @@ Terminology used for variable and method naming within the code, as well as outp
 If the suit count x value count exceeds 40 or so, you might experience memory issues on some platforms.  Increasing heap space might help.  Consult documentation for your platform.
 
 For grids larger than RAM allows, modification to store previously attained positions (board states) in a database should be considered.
+
+## Related Work
+
+If you are looking for methods that focus on solvability without secondary metrics, see Helmstetter & Cazenave at [https://link.springer.com/content/pdf/10.1007/978-0-387-35706-5_22.pdf](https://link.springer.com/content/pdf/10.1007/978-0-387-35706-5_22.pdf)
