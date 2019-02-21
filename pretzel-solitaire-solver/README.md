@@ -23,7 +23,7 @@ For the game [Pretzel Solitaire](https://pure.tue.nl/ws/files/4284803/598855.pdf
 4. Build (compile) the program.
 5. Find the resulting executable (look in [project directory]/bin/Debug) and run it with desired arguments and values.
 
-Sample usage: PretzelSolitaireSolver.exe s=4 v=4 t=10 i=100 d=0 a=0 o=0
+Sample usage: PretzelSolitaireSolver.exe s=4 v=4 t=10 e=100 d=0 a=0 o=0
 
 Usage help: PretzelSolitaireSolver.exe ?
 
