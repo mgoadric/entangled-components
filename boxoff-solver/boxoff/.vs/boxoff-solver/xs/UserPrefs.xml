@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{090D66AD-0DFF-41E0-982C-F2C7B80E86A4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="boxoff/BoxOffBoard.cs">
+    <Files>
+      <File FileName="boxoff/Program.cs" Line="108" Column="23" />
+      <File FileName="boxoff/BoxOffTile.cs" Line="1" Column="14" />
+      <File FileName="boxoff/BoxOffDTile.cs" Line="2" Column="17" />
+      <File FileName="boxoff/BoxOffBoard.cs" Line="7" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.boxoff-solver PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

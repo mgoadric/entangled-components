@@ -1,0 +1,4 @@
+/Users/goadrich/Github/fujisan/Simulator/Fujisan/bin/Release/Fujisan.exe
+/Users/goadrich/Github/fujisan/Simulator/Fujisan/obj/x86/Release/Fujisan.csproj.CoreCompileInputs.cache
+/Users/goadrich/Github/fujisan/Simulator/Fujisan/obj/x86/Release/Fujisan.exe
+/Users/goadrich/Github/fujisan/Simulator/Fujisan/obj/x86/Release/Fujisan.csprojAssemblyReference.cache

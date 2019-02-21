@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{C4D476DF-D0A7-4736-95D7-53B19208FD25}|Default">
+  <MonoDevelop.Ide.ItemProperties.Fujisan PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fujisan/Program.cs">
+    <Files>
+      <File FileName="Fujisan/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

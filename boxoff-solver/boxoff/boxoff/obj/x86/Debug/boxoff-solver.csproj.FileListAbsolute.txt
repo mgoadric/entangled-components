@@ -1,0 +1,6 @@
+/Users/goadrich/Github/entangled-components/boxoff-solver/boxoff/boxoff/obj/x86/Debug/boxoff-solver.csprojAssemblyReference.cache
+/Users/goadrich/Github/entangled-components/boxoff-solver/boxoff/boxoff/obj/x86/Debug/boxoff-solver.csproj.CoreCompileInputs.cache
+/Users/goadrich/Github/entangled-components/boxoff-solver/boxoff/boxoff/bin/Debug/boxoff.exe
+/Users/goadrich/Github/entangled-components/boxoff-solver/boxoff/boxoff/bin/Debug/boxoff.pdb
+/Users/goadrich/Github/entangled-components/boxoff-solver/boxoff/boxoff/obj/x86/Debug/boxoff.exe
+/Users/goadrich/Github/entangled-components/boxoff-solver/boxoff/boxoff/obj/x86/Debug/boxoff.pdb
