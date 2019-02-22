@@ -3,10 +3,6 @@ using System.Collections.Generic;
 
 namespace BoxOff
 {
-    public enum BoxOffSetup
-    {
-        TILES, DIFTILES, RANDOM, HARDCODE
-    }
 
     public class BoxOffBoard
     {
@@ -79,50 +75,60 @@ namespace BoxOff
             }
             else if (s == BoxOffSetup.TILES)
             {
+                // NOTE: if more cases are added, should also update Program.cs.ParseArguments
+
                 List<BoxOffTile> tiles = new List<BoxOffTile>();
                 // For 6x6, 6 colors
-                //tiles.Add(new BoxOnTile(1, 2));
-                //tiles.Add(new BoxOnTile(1, 5));
-                //tiles.Add(new BoxOnTile(2, 3));
-                //tiles.Add(new BoxOnTile(2, 6));
-                //tiles.Add(new BoxOnTile(3, 4));
-                //tiles.Add(new BoxOnTile(3, 1));
-                //tiles.Add(new BoxOnTile(4, 5));
-                //tiles.Add(new BoxOnTile(4, 2));
-                //tiles.Add(new BoxOnTile(5, 6));
-                //tiles.Add(new BoxOnTile(5, 3));
-                //tiles.Add(new BoxOnTile(6, 1));
-                //tiles.Add(new BoxOnTile(6, 4));
+                if (height == 6 && width == 6 && colorCount == 6) {
+                    tiles.Add(new BoxOffTile(1, 2));
+                    tiles.Add(new BoxOffTile(1, 5));
+                    tiles.Add(new BoxOffTile(2, 3));
+                    tiles.Add(new BoxOffTile(2, 6));
+                    tiles.Add(new BoxOffTile(3, 4));
+                    tiles.Add(new BoxOffTile(3, 1));
+                    tiles.Add(new BoxOffTile(4, 5));
+                    tiles.Add(new BoxOffTile(4, 2));
+                    tiles.Add(new BoxOffTile(5, 6));
+                    tiles.Add(new BoxOffTile(5, 3));
+                    tiles.Add(new BoxOffTile(6, 1));
+                    tiles.Add(new BoxOffTile(6, 4));
+                }
 
                 // For 6x6, 4 colors
-                //tiles.Add(new BoxOnTile(1, 2));
-                //tiles.Add(new BoxOnTile(1, 3));
-                //tiles.Add(new BoxOnTile(1, 4));
-                //tiles.Add(new BoxOnTile(2, 1));
-                //tiles.Add(new BoxOnTile(2, 4));
-                //tiles.Add(new BoxOnTile(2, 4));
-                //tiles.Add(new BoxOnTile(3, 1));
-                //tiles.Add(new BoxOnTile(3, 2));
-                //tiles.Add(new BoxOnTile(3, 4));
-                //tiles.Add(new BoxOnTile(4, 2));
-                //tiles.Add(new BoxOnTile(4, 2));
-                //tiles.Add(new BoxOnTile(4, 3));
+                if (height == 6 && width == 6 && colorCount == 4) {
+                    tiles.Add(new BoxOffTile(1, 2));
+                    tiles.Add(new BoxOffTile(1, 3));
+                    tiles.Add(new BoxOffTile(1, 4));
+                    tiles.Add(new BoxOffTile(2, 1));
+                    tiles.Add(new BoxOffTile(2, 4));
+                    tiles.Add(new BoxOffTile(2, 4));
+                    tiles.Add(new BoxOffTile(3, 1));
+                    tiles.Add(new BoxOffTile(3, 2));
+                    tiles.Add(new BoxOffTile(3, 4));
+                    tiles.Add(new BoxOffTile(4, 2));
+                    tiles.Add(new BoxOffTile(4, 2));
+                    tiles.Add(new BoxOffTile(4, 3));
+                }
 
                 // For 4x6
-                tiles.Add(new BoxOffTile(1, 2));
-                tiles.Add(new BoxOffTile(1, 3));
-                tiles.Add(new BoxOffTile(2, 3));
-                tiles.Add(new BoxOffTile(2, 4));
-                tiles.Add(new BoxOffTile(3, 4));
-                tiles.Add(new BoxOffTile(3, 1));
-                tiles.Add(new BoxOffTile(4, 1));
-                tiles.Add(new BoxOffTile(4, 2));
+                if (height == 4 && width == 6 && colorCount == 4) {
+                    tiles.Add(new BoxOffTile(1, 2));
+                    tiles.Add(new BoxOffTile(1, 3));
+                    tiles.Add(new BoxOffTile(2, 3));
+                    tiles.Add(new BoxOffTile(2, 4));
+                    tiles.Add(new BoxOffTile(3, 4));
+                    tiles.Add(new BoxOffTile(3, 1));
+                    tiles.Add(new BoxOffTile(4, 1));
+                    tiles.Add(new BoxOffTile(4, 2));
+                }
 
                 // For 4x3
-                //tiles.Add(new BoxOnTile(1, 2));
-                //tiles.Add(new BoxOnTile(2, 1));
-                //tiles.Add(new BoxOnTile(3, 2));
-                //tiles.Add(new BoxOnTile(4, 1));
+                if (height == 4 && width == 3 && colorCount == 2) {
+                    tiles.Add(new BoxOffTile(1, 2));
+                    tiles.Add(new BoxOffTile(2, 1));
+                    tiles.Add(new BoxOffTile(3, 2));
+                    tiles.Add(new BoxOffTile(4, 1));
+                }
 
                 Shuffle(tiles, random);
 
@@ -171,50 +177,60 @@ namespace BoxOff
             }
             else if (s == BoxOffSetup.DIFTILES)
             {
+                // NOTE: if more cases are added, should also update Program.cs.ParseArguments
+
                 List<BoxOffDTile> tiles = new List<BoxOffDTile>();
                 // For 6x6, 6 colors
-                //tiles.Add(new BoxOnTile(1, 2));
-                //tiles.Add(new BoxOnTile(1, 5));
-                //tiles.Add(new BoxOnTile(2, 3));
-                //tiles.Add(new BoxOnTile(2, 6));
-                //tiles.Add(new BoxOnTile(3, 4));
-                //tiles.Add(new BoxOnTile(3, 1));
-                //tiles.Add(new BoxOnTile(4, 5));
-                //tiles.Add(new BoxOnTile(4, 2));
-                //tiles.Add(new BoxOnTile(5, 6));
-                //tiles.Add(new BoxOnTile(5, 3));
-                //tiles.Add(new BoxOnTile(6, 1));
-                //tiles.Add(new BoxOnTile(6, 4));
+                //if (height == 6 && width == 6 && colorCount == 6) {
+                //    tiles.Add(new BoxOffDTile(1, 2, ?));
+                //    tiles.Add(new BoxOffDTile(1, 5, ?));
+                //    tiles.Add(new BoxOffDTile(2, 3, ?));
+                //    tiles.Add(new BoxOffDTile(2, 6, ?));
+                //    tiles.Add(new BoxOffDTile(3, 4, ?));
+                //    tiles.Add(new BoxOffDTile(3, 1, ?));
+                //    tiles.Add(new BoxOffDTile(4, 5, ?));
+                //    tiles.Add(new BoxOffDTile(4, 2, ?));
+                //    tiles.Add(new BoxOffDTile(5, 6, ?));
+                //    tiles.Add(new BoxOffDTile(5, 3, ?));
+                //    tiles.Add(new BoxOffDTile(6, 1, ?));
+                //    tiles.Add(new BoxOffDTile(6, 4, ?));
+                //}
 
                 // For 6x6, 4 colors
-                //tiles.Add(new BoxOnTile(1, 2));
-                //tiles.Add(new BoxOnTile(1, 3));
-                //tiles.Add(new BoxOnTile(1, 4));
-                //tiles.Add(new BoxOnTile(2, 1));
-                //tiles.Add(new BoxOnTile(2, 4));
-                //tiles.Add(new BoxOnTile(2, 4));
-                //tiles.Add(new BoxOnTile(3, 1));
-                //tiles.Add(new BoxOnTile(3, 2));
-                //tiles.Add(new BoxOnTile(3, 4));
-                //tiles.Add(new BoxOnTile(4, 2));
-                //tiles.Add(new BoxOnTile(4, 2));
-                //tiles.Add(new BoxOnTile(4, 3));
+                //if (height == 6 && width == 6 && colorCount == 4) {
+                //    tiles.Add(new BoxOffDTile(1, 2, ?));
+                //    tiles.Add(new BoxOffDTile(1, 3, ?));
+                //    tiles.Add(new BoxOffDTile(1, 4, ?));
+                //    tiles.Add(new BoxOffDTile(2, 1, ?));
+                //    tiles.Add(new BoxOffDTile(2, 4, ?));
+                //    tiles.Add(new BoxOffDTile(2, 4, ?));
+                //    tiles.Add(new BoxOffDTile(3, 1, ?));
+                //    tiles.Add(new BoxOffDTile(3, 2, ?));
+                //    tiles.Add(new BoxOffDTile(3, 4, ?));
+                //    tiles.Add(new BoxOffDTile(4, 2, ?));
+                //    tiles.Add(new BoxOffDTile(4, 2, ?));
+                //    tiles.Add(new BoxOffDTile(4, 3, ?));
+                //}
 
                 // For 4x6
-                tiles.Add(new BoxOffDTile(1, 2, 3));
-                tiles.Add(new BoxOffDTile(4, 1, 2));
-                tiles.Add(new BoxOffDTile(3, 4, 1));
-                tiles.Add(new BoxOffDTile(2, 3, 4));
-                tiles.Add(new BoxOffDTile(1, 4, 3));
-                tiles.Add(new BoxOffDTile(2, 1, 4));
-                tiles.Add(new BoxOffDTile(3, 2, 1));
-                tiles.Add(new BoxOffDTile(4, 3, 2));
+                if (height == 4 && width == 6 && colorCount == 4) {
+                    tiles.Add(new BoxOffDTile(1, 2, 3));
+                    tiles.Add(new BoxOffDTile(4, 1, 2));
+                    tiles.Add(new BoxOffDTile(3, 4, 1));
+                    tiles.Add(new BoxOffDTile(2, 3, 4));
+                    tiles.Add(new BoxOffDTile(1, 4, 3));
+                    tiles.Add(new BoxOffDTile(2, 1, 4));
+                    tiles.Add(new BoxOffDTile(3, 2, 1));
+                    tiles.Add(new BoxOffDTile(4, 3, 2));
+                }
 
                 // For 4x3
-                //tiles.Add(new BoxOnTile(1, 2));
-                //tiles.Add(new BoxOnTile(2, 1));
-                //tiles.Add(new BoxOnTile(3, 2));
-                //tiles.Add(new BoxOnTile(4, 1));
+                //if (height == 6 && width == 6 && colorCount == 6) {
+                //    tiles.Add(new BoxOffDTile(1, 2, ?));
+                //    tiles.Add(new BoxOffDTile(2, 1, ?));
+                //    tiles.Add(new BoxOffDTile(3, 2, ?));
+                //    tiles.Add(new BoxOffDTile(4, 1, ?));
+                //}
 
                 Shuffle(tiles, random);
 
@@ -302,7 +318,7 @@ namespace BoxOff
         }
 
         /********
-         * Determines if the board is solves, such that all pawns
+         * Determines if the board is solved, such that all pawns
          * are in the four center locations
          */
         public bool Solved()
