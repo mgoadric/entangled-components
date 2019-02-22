@@ -2,7 +2,7 @@
 
 Challenges for solitaire puzzle games are typically limited in number and designed in advance by humans. Alternately, some games incorporate stochastic setup rules, in which the solver randomly sets up the game board before solving the challenge, which can greatly increase the number of possible challenges. However, these setup rules can often generate unsolvable or uninteresting challenges. 
 
-For the game [BoxOff](https://pure.tue.nl/ws/files/4284803/598855.pdf), we examine how different stochastic challenge generation algorithms affect challenge solvability and interest.  We find that algorithms can generate challenges with a higher rate of solvability without sacrificing challenge interest by constraining randomness through embedding sub-elements of the puzzle mechanics into the physical pieces or setup of the game, which we label component entanglement.
+For the game BoxOff (see S. Meyers, “Boxoff: a new solitaire board game,”GAMES, vol. 37, no. 6,pp. 12–13, 2013), we examine how different stochastic challenge generation algorithms affect challenge solvability and interest.  We find that algorithms can generate challenges with a higher rate of solvability without sacrificing challenge interest by constraining randomness through embedding sub-elements of the puzzle mechanics into the physical pieces or setup of the game, which we label component entanglement.
 
 ## Requirements
 
