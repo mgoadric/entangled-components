@@ -2,7 +2,7 @@
 
 Challenges for solitaire puzzle games are typically limited in number and designed in advance by humans. Alternately, some games incorporate stochastic setup rules, in which the solver randomly sets up the game board before solving the challenge, which can greatly increase the number of possible challenges. However, these setup rules can often generate unsolvable or uninteresting challenges. 
 
-For the game [Pretzel Solitaire](https://pure.tue.nl/ws/files/4284803/598855.pdf), we examine how different stochastic challenge generation algorithms affect ease of physical setup, challenge solvability, and challenge difficulty.  We find that algorithms can be simple for the solver yet generate solvable and difficult challenges, by constraining randomness through embedding sub-elements of the puzzle mechanics into the physical pieces or setup of the game.
+For the game [Pretzel Solitaire](https://pure.tue.nl/ws/files/4284803/598855.pdf), we examine how different stochastic challenge generation algorithms affect challenge solvability and interest.  We find that algorithms can generate challenges with a higher rate of solvability without sacrificing challenge interest by constraining randomness through embedding sub-elements of the puzzle mechanics into the physical pieces or setup of the game, which we label component entanglement.
 
 ## Requirements
 
